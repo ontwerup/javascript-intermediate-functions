@@ -12,7 +12,7 @@
 function getEmailDomain(emailaddress) {
     // bepaal op welk indexnummer het apenstaartje staat
     const indexOfApenstaartje = emailaddress.indexOf('@');
-    // knip alles ná het apenstaartje van het emailadres af
+    // alles afknippen ná het apenstaartje van het emailadres af
     const domain = emailaddress.substring(indexOfApenstaartje + 1);
 
     return domain;
@@ -33,6 +33,7 @@ console.log(domainOne, domainTwo, domainThree);
 // typeOfEmail("t.mellink@novi.nl") geeft geeft "Medewerker"
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
+
 
 function typeOfEmail(emailaddress) {
     // je kunt óf de code uit de vorige vraag kopieren, of de functie getEmailDomain hier aanroepen!
